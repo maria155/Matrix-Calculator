@@ -7,8 +7,8 @@ void UPR::print()
 	cout << " " << endl;
     cout << "MENU" << endl;
     cout << " " << endl;
-	cout << "1. Multiplicate the matrix by a scalar" << endl;
-	cout << "2. Multiplicate the matrix by another matrix" << endl;
+	cout << "1. Multiply the matrix by a scalar" << endl;
+	cout << "2. Multiply the matrix by another matrix" << endl;
 	cout << "3. Find the determinant of a matrix with a maximum size of 4x4" << endl;
 	cout << "4. Divide the matrix by a scalar" << endl;
 	cout << "5. Find the inverse matrix" << endl;
@@ -19,10 +19,62 @@ void UPR::print()
     cin >> choice;
     cout << " " << endl;
 
-    if (choice < 1 || choice > 6) {
-        cout << "Wrong input. Please choose a valid option from the menu.";
-        return;
+    switch (choice)
+    {
+    case 1:
+        MultiplyByScalar();
+        break;
+    case 2:
+        MultiplyByAnotherMatrix();
+        break;
+    case 3:
+        Determinant();
+        break;
+    case 4:
+        DivideByScalar();
+        break;
+    case 5:
+        InverseMatrix();
+        break;
+    case 6:
+        Transposition();
+        break;
+    default:
+        cout << "Wrong input. Please choose a valid option from the menu." << endl;
+        break;
+    }
+    
+}
+
+    void MultiplyByScalar() {
+        cout << "Multiplication of the matrix by a scalar:" << endl;
+    }
+    void MultiplyByAnotherMatrix() {
+        cout << "Multiplication of the matrix by another matrix:" << endl;
     }
 
+    void Determinant() {
+        cout << "Finding the determinant of a matrix with a maximum size of 4x4:" << endl;
+    }
+
+    void DivideByScalar() {
+        cout << "Dividing the matrix by a scalar:" << endl;
+    }
+
+    void InverseMatrix() {
+        cout << "Finding the inverse matrix:" << endl;
+    }
+
+    void Transposition() {
+        cout << "Transpositioning the matrix:" << endl;
+    }
+
+
+
+
+
+
+
+
   
-}
+
