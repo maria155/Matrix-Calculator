@@ -51,6 +51,56 @@ void UPR::print()
     }
     void MultiplyByAnotherMatrix() {
         cout << "Multiplication of the matrix by another matrix:" << endl;
+
+        // we enter the first matrix
+        int i, j;
+        int a[10][20];
+        int n, m; // n = rows, m = columns
+        
+        cout << "Enter the number of rows of the first matrix: ";
+        cin >> n;
+        cout << "Enter the number of columns of the first matrix: ";
+        cin >> m;
+        for (i = 0; i < n; i++) {
+            for (j = 0; j < m; j++)
+            {
+                cout << "a[" << i << "][" << j << "]= ";
+                cin >> a[i][j];
+            }
+        }
+
+        for (i = 0; i < n; i++)
+        {
+            for (j = 0; j < m; j++)
+                cout << a[i][j] << "  ";
+            cout << endl;
+        }
+
+        //we enter the second matrix 
+
+        //int i, j;
+        int b[10][20];
+        int k, t; // k = rows, t = columns
+
+        cout << "Enter the number of rows of the second matrix: ";
+        cin >> k;
+        cout << "Enter the number of columns of the second matrix: ";
+        cin >> t;
+        for (i = 0; i < k; i++) {
+            for (j = 0; j < t; j++)
+            {
+                cout << "b[" << i << "][" << j << "]= ";
+                cin >> b[i][j];
+            }
+        }
+
+        for (i = 0; i < k; i++)
+        {
+            for (j = 0; j < t; j++)
+                cout << b[i][j] << "  ";
+            cout << endl;
+        }
+
     }
 
     void Determinant() {
