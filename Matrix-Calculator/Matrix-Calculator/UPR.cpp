@@ -50,9 +50,9 @@ void UPR::print()
         cout << "Multiplication of the matrix by a scalar:" << endl;
     }
     void MultiplyByAnotherMatrix() {
-        cout << "Multiplication of the matrix by another matrix:" << endl;
+        cout << "Multiplication of the matrix by another matrix" << endl;
 
-        // we enter the first matrix
+        // we enter the numbers for the first matrix
         int i, j;
         int a[10][20];
         int n, m; // n = rows, m = columns
@@ -69,16 +69,22 @@ void UPR::print()
             }
         }
 
+        // the first matrix
+
         for (i = 0; i < n; i++)
         {
-            for (j = 0; j < m; j++)
+            for (j = 0; j < m; j++) {
+               if (a[i][j] < 10) {
+                  cout << " ";
+                }
                 cout << a[i][j] << "  ";
+                
+            }
             cout << endl;
         }
 
-        //we enter the second matrix 
+        //we enter the numbers for the second matrix 
 
-        //int i, j;
         int b[10][20];
         int k, t; // k = rows, t = columns
 
@@ -94,10 +100,17 @@ void UPR::print()
             }
         }
 
+        // the second matrix
+
         for (i = 0; i < k; i++)
         {
-            for (j = 0; j < t; j++)
+            for (j = 0; j < t; j++) {
+                if (b[i][j] < 10) {
+                    cout << " ";
+                }
                 cout << b[i][j] << "  ";
+
+            }
             cout << endl;
         }
 
