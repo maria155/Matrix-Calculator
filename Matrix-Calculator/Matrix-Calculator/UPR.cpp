@@ -51,69 +51,75 @@ void UPR::print()
     }
     void MultiplyByAnotherMatrix() {
         cout << "Multiplication of the matrix by another matrix" << endl;
+        cout << " " << endl;
 
-        // we enter the numbers for the first matrix
-        int i, j;
-        int a[10][20];
-        int n, m; // n = rows, m = columns
-        
-        cout << "Enter the number of rows of the first matrix: ";
+        int a[10][10], b[10][10];
+        int mult[10][10];
+        int n, m; // n = rows of first matrix, m = columns of first matrix
+        int z, t; // z = rows of second matrix, t = columns of second matrix
+
+        cout << "Enter rows for first matrix: ";
         cin >> n;
-        cout << "Enter the number of columns of the first matrix: ";
+        cout << "Enter columns for first matrix: ";
         cin >> m;
-        for (i = 0; i < n; i++) {
-            for (j = 0; j < m; j++)
-            {
-                cout << "a[" << i << "][" << j << "]= ";
+
+        cout << "Enter rows for second matrix: ";
+        cin >> z;
+        cout << "Enter columns for second matrix: ";
+        cin >> t;
+
+        
+
+        if (m != z) {
+            cout << "The column of the first matrix is not equal to the row of the second matrix." << endl;
+
+            cout << "Please, enter rows for first matrix again: " << endl;
+            cin >> n;
+            cout << "Please, enter columns for first matrix again: " << endl;
+            cin >> m;
+
+            cout << "Please, enter rows for second matrix again: " << endl;
+            cin >> z;
+            cout << "Please, enter columns for second matrix again: " << endl;
+            cin >> t;
+
+        }
+
+        cout << endl << "Enter elements of first matrix:" << endl;
+        for (int i = 0; i < n; ++i)
+            for (int j = 0; j < m; ++j){
+                cout << "Enter element a" << i + 1 << j + 1 << " : ";
                 cin >> a[i][j];
             }
-        }
 
-        // the first matrix
-
-        for (i = 0; i < n; i++)
-        {
-            for (j = 0; j < m; j++) {
-               if (a[i][j] < 10) {
-                  cout << " ";
-                }
-                cout << a[i][j] << "  ";
-                
-            }
-            cout << endl;
-        }
-
-        //we enter the numbers for the second matrix 
-
-        int b[10][20];
-        int k, t; // k = rows, t = columns
-
-        cout << "Enter the number of rows of the second matrix: ";
-        cin >> k;
-        cout << "Enter the number of columns of the second matrix: ";
-        cin >> t;
-        for (i = 0; i < k; i++) {
-            for (j = 0; j < t; j++)
-            {
-                cout << "b[" << i << "][" << j << "]= ";
+        cout << endl << "Enter elements of second matrix:" << endl;
+        for (int i = 0; i < z; ++i)
+            for (int j = 0; j < t; ++j){
+                cout << "Enter element b" << i + 1 << j + 1 << " : ";
                 cin >> b[i][j];
             }
-        }
 
-        // the second matrix
-
-        for (i = 0; i < k; i++)
-        {
-            for (j = 0; j < t; j++) {
-                if (b[i][j] < 10) {
-                    cout << " ";
-                }
-                cout << b[i][j] << "  ";
-
+        for (int i = 0; i < n; ++i)
+            for (int j = 0; j < t; ++j){
+                mult[i][j] = 0;
             }
-            cout << endl;
-        }
 
+        for (int i = 0; i < n; ++i)
+            for (int j = 0; j < t; ++j)
+                for (int k = 0; k < z; ++k){
+                    mult[i][j] += a[i][k] * b[k][j];
+                }
+
+        cout << endl << "Result: " << endl;
+        for (int i = 0; i < n; ++i)
+            for (int j = 0; j < t; ++j){
+                cout << " " << mult[i][j];
+                if (j == t - 1) {
+                    cout << endl;
+                }
+            }
+
+        return;
     }
 
     void Determinant() {
