@@ -144,6 +144,7 @@
     <ClCompile Include="UPR.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MultiplicationByAnotherMatrix.h" />
     <ClInclude Include="UPR.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -29,5 +29,8 @@
     <ClInclude Include="UPR.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MultiplicationByAnotherMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
