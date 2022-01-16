@@ -4,8 +4,8 @@ using namespace std;
 
 void MultiplicationByMatrix() {
 
-    int a[10][10], b[10][10];
-    int mult[10][10];
+    double a[10][10], b[10][10];
+    double mult[10][10];
     int n, m; // n = rows of first matrix, m = columns of first matrix
     int z, t; // z = rows of second matrix, t = columns of second matrix
 

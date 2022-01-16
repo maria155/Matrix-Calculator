@@ -24,12 +24,18 @@
     <ClCompile Include="MultiplicationByAnotherMatrix.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MultiplicationByAScalar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UPR.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MultiplicationByAnotherMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiplicationByAScalar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

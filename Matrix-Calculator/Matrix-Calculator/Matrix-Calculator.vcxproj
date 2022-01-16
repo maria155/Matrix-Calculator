@@ -140,11 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="MultiplicationByAnotherMatrix.cpp" />
+    <ClCompile Include="MultiplicationByAScalar.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="UPR.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MultiplicationByAnotherMatrix.h" />
+    <ClInclude Include="MultiplicationByAScalar.h" />
     <ClInclude Include="UPR.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

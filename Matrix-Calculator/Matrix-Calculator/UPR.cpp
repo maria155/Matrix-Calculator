@@ -1,5 +1,6 @@
 #include "UPR.h"
 #include "MultiplicationByAnotherMatrix.h"
+#include "MultiplicationByAScalar.h"
 #include <iostream>
 using namespace std;
 
@@ -25,7 +26,7 @@ void UPR::print()
     switch (choice)
     {
     case 1:
-        MultiplyByScalar();
+        MultiplyByAScalar();
         break;
     case 2:
         MultiplyByAnotherMatrix();
@@ -49,10 +50,11 @@ void UPR::print()
     
 }
 
-    void MultiplyByScalar() {
+    void MultiplyByAScalar() {
         cout << "Multiplication of the matrix by a scalar" << endl;
         cout << " " << endl;
 
+        MultiplicationByScalar();
     }
     void MultiplyByAnotherMatrix() {
         cout << "Multiplication of the matrix by another matrix" << endl;

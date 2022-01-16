@@ -8,7 +8,7 @@ public:
 	void print();
 
 };
-void MultiplyByScalar();
+void MultiplyByAScalar();
 
 void MultiplyByAnotherMatrix();
 
