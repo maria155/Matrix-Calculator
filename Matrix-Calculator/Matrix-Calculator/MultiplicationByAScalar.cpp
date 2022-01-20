@@ -3,39 +3,39 @@
 using namespace std;
 
 void MultiplicationByScalar() {
-    double scalar;
-    double a[10][10];
-    //double mult[10][10];
-    int n, m; // n = rows of first matrix, m = columns of first matrix
-    
-    cout << "Enter scalar: ";
-    cin >> scalar;
+	int i, j; // rows and columns of the matrix
+	int rows, columns, scalar;
 
-    cout << "Enter rows for first matrix: ";
-    cin >> n;
-    cout << "Enter columns for first matrix: ";
-    cin >> m;
-
-    cout << endl << "Enter elements of first matrix:" << endl;
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < m; ++j) {
-            cout << "Enter element a" << i + 1 << j + 1 << " : ";
-            cin >> a[i][j];
-        }
-    }
-
-    cout << endl;
-
-    cout << "First matrix: " << endl;
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            cout << a[i][j] << "  ";
-        }
-        cout << endl;
-    }
-
-    cout << endl;
+	cout << "Enter the rows of the matrix: ";
+	cin >> i;
+	cout << "Enter the columns of the matrix: ";
+	cin >> j;
+	cout << endl;
 
 
-    return;
+	int scalarMult[10][10], mult[10][10];
+
+	cout << "Enter the elements of the matrix" << endl;
+	for (rows = 0; rows < i; rows++) {
+		for (columns = 0; columns < i; columns++) {
+			cin >> scalarMult[rows][columns];
+		}
+	}
+	cout << endl;
+
+	cout << "Enter the scalar: ";
+	cin >> scalar;
+
+	cout << endl;
+
+	cout << "The Result: " << endl;
+	for (rows = 0; rows < i; rows++) {
+		for (columns = 0; columns < j; columns++) {
+			mult[rows][columns] = scalar * scalarMult[rows][columns];
+			cout << mult[rows][columns] << " ";
+		}
+		cout << endl;
+	}
+
+	return;
 }

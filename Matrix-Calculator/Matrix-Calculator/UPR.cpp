@@ -54,6 +54,7 @@ void UPR::print()
         cout << "Multiplication of the matrix by a scalar" << endl;
         cout << " " << endl;
 
+
         MultiplicationByScalar();
     }
     void MultiplyByAnotherMatrix() {
@@ -65,6 +66,7 @@ void UPR::print()
 
     void Determinant() {
         cout << "Finding the determinant of a matrix with a maximum size of 4x4:" << endl;
+       
     }
 
     void DivideByScalar() {
