@@ -1,3 +1,19 @@
+/**
+*
+* Solution to course project # 11
+* Introduction to programming course
+* Faculty of Mathematics and Informatics of Sofia University
+* Winter semester 2021/2022
+*
+* @author Maria Aleksandrova
+* @idnumber 0MI0600067
+* @compiler VC
+*
+* <The menu that is going to be displayed when you run the programme.>
+*
+*/
+
+
 #include "UPR.h"
 #include "MultiplicationByAnotherMatrix.h"
 #include "MultiplicationByAScalar.h"
@@ -7,7 +23,6 @@
 #include "TranspositionOfTheMatrix.h"
 #include <iostream>
 using namespace std;
-
 
 void UPR::print()
 {
@@ -23,10 +38,11 @@ void UPR::print()
 	cout << "6. Transposition the matrix" << endl;
     cout << " " << endl;
     int choice;
-    cout << "Please enter your choice: " << endl;
+    cout << "Please enter your choice (1-6): " << endl;
     cin >> choice;
     cout << " " << endl;
 
+    // I use switch-case so that the user can choose one of the options from the menu.
     switch (choice)
     {
     case 1:

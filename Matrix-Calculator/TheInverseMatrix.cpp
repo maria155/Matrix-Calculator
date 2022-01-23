@@ -1,18 +1,33 @@
+/**
+*
+* Solution to course project # 11
+* Introduction to programming course
+* Faculty of Mathematics and Informatics of Sofia University
+* Winter semester 2021/2022
+*
+* @author Maria Aleksandrova
+* @idnumber 0MI0600067
+* @compiler VC
+*
+* <The logic of the Inverse void function>
+*
+*/
+
 #include "TheInverseMatrix.h"
 #include <iostream>
 using namespace std;
 
 void Inverse() {
 	float a[10][10], x[10], ratio;
-	int i, j, k, n;
-
-
+	int i, j, k;
+	int n; // number of rows and columns of the matrix
 	
-	cout << "Enter order of matrix: ";
+	// We will find the inverse matrix of a square matrix
+	cout << "Enter the number of rows and columns of the matrix (rows = columns): ";
 	cin >> n;
 
-	
-	cout << "Enter coefficients of Matrix: " << endl;
+	// Entering the elements of the matrix
+	cout << "Enter the elements of the matrix: " << endl;
 	for (i = 1; i <= n; i++)
 	{
 		for (j = 1; j <= n; j++)
@@ -22,7 +37,6 @@ void Inverse() {
 		}
 	}
 
-	
 	for (i = 1; i <= n; i++)
 	{
 		for (j = 1; j <= n; j++)
@@ -38,9 +52,11 @@ void Inverse() {
 		}
 	}
 
+	cout << endl;
+
 	for (i = 1; i <= n; i++)
-	{
-		if (a[i][i] == 0.0)
+	{// We check if the determinant of the matrix is equal to zero
+		if (a[i][i] == 0)
 		{
 			cout << "The determinant of the matrix is equal to zero! The transposition of the matrix cannot be performed!";
 			cout << " " << endl;
@@ -67,6 +83,7 @@ void Inverse() {
 		}
 	}
 	
+	// Printing the matrix
 	cout << endl << "The inverse matrix is:" << endl;
 	for (i = 1; i <= n; i++)
 	{
