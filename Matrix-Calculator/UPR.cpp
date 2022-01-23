@@ -23,7 +23,7 @@ void UPR::print()
 	cout << "6. Transposition the matrix" << endl;
     cout << " " << endl;
     int choice;
-    cout << "Please, enter your choice: " << endl;
+    cout << "Please enter your choice: " << endl;
     cin >> choice;
     cout << " " << endl;
 
