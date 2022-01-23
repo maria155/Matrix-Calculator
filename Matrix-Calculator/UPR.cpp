@@ -1,6 +1,10 @@
 #include "UPR.h"
 #include "MultiplicationByAnotherMatrix.h"
 #include "MultiplicationByAScalar.h"
+#include "DeterminantOfTheMatrix.h"
+#include "DivisionByAScalar.h"
+#include "TheInverseMatrix.h"
+#include "TranspositionOfTheMatrix.h"
 #include <iostream>
 using namespace std;
 
@@ -65,20 +69,31 @@ void UPR::print()
     }
 
     void Determinant() {
-        cout << "Finding the determinant of a matrix with a maximum size of 4x4:" << endl;
-       
+        cout << "Finding the determinant of a matrix with a maximum size of 4x4" << endl;
+        cout << " " << endl;
+
+        DeterminantOfMatrix();
     }
 
     void DivideByScalar() {
-        cout << "Dividing the matrix by a scalar:" << endl;
+        cout << "Dividing the matrix by a scalar" << endl;
+        cout << " " << endl;
+
+        DivisionByScalar();
     }
 
     void InverseMatrix() {
-        cout << "Finding the inverse matrix:" << endl;
+        cout << "Finding the inverse matrix" << endl;
+        cout << " " << endl;
+
+        Inverse();
     }
 
     void Transposition() {
-        cout << "Transpositioning the matrix:" << endl;
+        cout << "Finding the transpose of the matrix" << endl;
+        cout << " " << endl;
+
+        TranspositionOfMatrix();
     }
 
 

@@ -139,14 +139,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DeterminantOfTheMatrix.cpp" />
+    <ClCompile Include="DivisionByAScalar.cpp" />
     <ClCompile Include="MultiplicationByAnotherMatrix.cpp" />
     <ClCompile Include="MultiplicationByAScalar.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="TheInverseMatrix.cpp" />
+    <ClCompile Include="TranspositionOfTheMatrix.cpp" />
     <ClCompile Include="UPR.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DeterminantOfTheMatrix.h" />
+    <ClInclude Include="DivisionByAScalar.h" />
     <ClInclude Include="MultiplicationByAnotherMatrix.h" />
     <ClInclude Include="MultiplicationByAScalar.h" />
+    <ClInclude Include="TheInverseMatrix.h" />
+    <ClInclude Include="TranspositionOfTheMatrix.h" />
     <ClInclude Include="UPR.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

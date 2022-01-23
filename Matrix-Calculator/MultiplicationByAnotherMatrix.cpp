@@ -84,7 +84,7 @@ void MultiplicationByMatrix() {
         }
     }
 
-    cout << endl << "Result: " << endl;
+    cout << endl << "Result of the multiplication of the two matrices: " << endl;
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < t; ++j) {
             cout << mult[i][j] << " ";
